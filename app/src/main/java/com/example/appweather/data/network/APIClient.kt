@@ -4,7 +4,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Inject
 
-class ClientApi @Inject constructor() {
+class APIClient @Inject constructor() {
     companion object {
         private const val BASE_URL = "https://api.openweathermap.org/data/2.5/"
     }

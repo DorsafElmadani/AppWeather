@@ -43,7 +43,6 @@ class WeatherViewModel @Inject constructor(private val repository : WeatherRepos
     fun restartLoading() {
         _weatherData.value = emptyList()
         _progress.value = 0
-        _message.value = ""
         _loadingVisible.value = true
         displayMessages()
         fetchWeatherData()

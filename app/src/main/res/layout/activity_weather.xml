@@ -58,7 +58,7 @@
             >
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content">
 
                 <TableLayout
                     android:id="@+id/tableLayout"
@@ -87,7 +87,7 @@
             android:text="@{viewModel.message}"
             android:textColor="@color/skyBlue"
             android:textSize="18sp"
-            android:visibility="@{viewModel.loadingVisible ? view.VISIBLE : view.INVISIBLE}" />
+            android:visibility="@{(viewModel.loadingVisible || viewModel.error)  ? view.VISIBLE : view.INVISIBLE}" />
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
